@@ -1,0 +1,2 @@
+result=$(curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Token: 1eac13fc8979957e37185e59b3459c701b58acbf' 'https://api.appcenter.ms/v0.1/apps/tony.lin-03/testApp/release_uploads')
+echo $result
