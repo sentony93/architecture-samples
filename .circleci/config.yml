@@ -35,4 +35,6 @@ jobs:
 
       - run:
           name: Upload to App Center
-          command: appcenter distribute release --app tony.lin-03/testApp -f app/build/outputs/apk/mock/debug/app-mock-debug.apk --group "all"
+          command:
+            npm install -g appcenter-cli
+            appcenter distribute release --app tony.lin-03/testApp -f app/build/outputs/apk/mock/debug/app-mock-debug.apk --group "all"
