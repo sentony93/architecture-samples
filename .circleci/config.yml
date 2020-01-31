@@ -32,8 +32,3 @@ jobs:
       - run:
           name: Build
           command: ./gradlew assembleMockDebug
-
-      - run:
-          name: Upload to App Center
-          command:
-            sh upload.sh
